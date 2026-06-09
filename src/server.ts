@@ -188,7 +188,7 @@ function startServer(): net.Server {
     });
   });
 
-  server.listen(PORT, () => {
+  server.listen(PORT, "0.0.0.0", () => {
     console.log(`[SERVER] Escuchando en el puerto ${PORT}`);
   });
 
